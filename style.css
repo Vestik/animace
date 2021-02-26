@@ -31,7 +31,7 @@ margin: auto;
 
     margin: auto;
     margin-top: 200px;
-    
+
     z-index: 1;
 }
 h1{
@@ -40,20 +40,22 @@ h1{
     padding-bottom: 20px;
 }
 body{
+    
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
     background: black;
     margin: auto;
 }
 section{
-    height:100vh ;
+    height:100% ;
 }
 span{
     position: absolute;
     pointer-events: none;
     background: white;
     animation: animate 5s linear infinite;
-    z-inedx: -1;
+    z-index: -1;
+    
 }
 
 @keyframes animate
@@ -76,5 +78,3 @@ opacity:    1;
 transform: scale(1) translateY(-500%) rotate(360deg);    
 }
 }
-
-
