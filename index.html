@@ -9,11 +9,31 @@
 </head>
 <body>
  
-<section></section>    
+<section>
+
+<div class="main">
+    <img src="images/avatar.png" alt="Avatar" class="avatar"></br>
+    <h1>Veste</h1>
+    <a href="https://www.instagram.com/dominik_smejkal/">
+        <img alt="instagram" src="images/instagram.png" width="100" height="100">
+    </a>
+
+    <a href="https://www.facebook.com/dominik.smeejkal/">
+        <img alt="facebook" src="images/facebook.png" width="100" height="100">
+    </a>
+</br>
+    <a href="https://www.youtube.com/watch?v=d1YBv2mWll0">
+        <img alt="tiktok" src="images/tiktok.png" width="100" height="100">
+    </a>
+</div>
+
+</section>    
+
 <script>
 function createSquare(){
 const section = document.querySelector('section');
 const square = document.createElement('span');
+
 
 var size = Math.random() * 50;
 
@@ -25,29 +45,15 @@ square.style.left = Math.random() * innerWidth + 'px';
 
 section.appendChild(square);
 
-setTimeout(() =>{
+setTimeout(() => {
     square.remove()
-},5000)
+}, 5000);
 }
+
+
+setInterval(createSquare,150)
 </script>
 
 
-
-    <div class="main">
-        <img src="images/avatar.png" alt="Avatar" class="avatar"></br>
-        <h1>Veste</h1>
-   
-        <a href="https://www.instagram.com/dominik_smejkal/">
-            <img alt="instagram" src="images/instagram.png" width="100" height="100">
-        </a>
-
-        <a href="https://www.facebook.com/dominik.smeejkal/">
-            <img alt="facebook" src="images/facebook.png" width="100" height="100">
-        </a>
-    
-        <a href="https://vm.tiktok.com/ZMe2SSuwR/">
-            <img alt="tiktok" src="images/tiktok.png" width="100" height="100">
-        </a>
-    </div>
 </body>
 </html>
